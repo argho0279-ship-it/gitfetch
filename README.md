@@ -171,3 +171,6 @@ MIT License - feel free to use and modify!
 <p align="center">
   Made with ❤️ for developers who ❤️ the terminal
 </p>
+<p align="center">
+Please leave a star if its a cool and you like it
+</p>
