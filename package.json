@@ -1,0 +1,19 @@
+{
+  "name": "gitfetch-cli",
+  "version": "1.0.0",
+  "description": "A beautiful CLI tool to browse and download GitHub repositories",
+  "main": "dist/index.js",
+  "bin": {
+    "gitfetch": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "start": "npm run build && node dist/index.js"
+  },
+  "keywords": ["github", "cli", "repository", "browser"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  }
+}
