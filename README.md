@@ -168,6 +168,10 @@ MIT License - feel free to use and modify!
 
 ---
 
+## NPM link
+
+https://www.npmjs.com/package/gitfetch-cli
+
 <p align="center">
   Made with ❤️ for developers who ❤️ the terminal
 </p>
