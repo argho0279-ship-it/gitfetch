@@ -1,21 +1,199 @@
-# gitfetch 🖥️
+<div align="center">
 
-<p align="center">
-  <img src="public/step-1.png" alt="gitfetch - Beautiful GitHub CLI" width="800"/>
-</p>
+<img src="https://github.com/argho0279-ship-it/gitfetch/raw/master/public/step-1.png" width="700" />
 
-A beautiful, interactive CLI tool to browse and download GitHub repositories. Built with love for developers who prefer the terminal.
+<br/>
+
+# gitfetch
+
+### Paste a GitHub link. Pick your files. Done.
+
+**No syntax. No bloat. No friction.**
+
+<br/>
+
+[![npm version](https://img.shields.io/npm/v/gitfetch-cli?color=00ff88&labelColor=0a0a0a&style=for-the-badge)](https://www.npmjs.com/package/gitfetch-cli)
+[![npm downloads](https://img.shields.io/npm/dm/gitfetch-cli?color=00ff88&labelColor=0a0a0a&style=for-the-badge)](https://www.npmjs.com/package/gitfetch-cli)
+[![license](https://img.shields.io/npm/l/gitfetch-cli?color=00ff88&labelColor=0a0a0a&style=for-the-badge)](./LICENSE)
+[![node](https://img.shields.io/node/v/gitfetch-cli?color=00ff88&labelColor=0a0a0a&style=for-the-badge)](https://nodejs.org)
+
+<br/>
+
+```bash
+npx gitfetch
+```
+
+</div>
+
+---
+
+<br/>
+
+## 😩 The old way
+
+```bash
+git clone https://github.com/some/massive-repo
+cd massive-repo
+# congrats, you now have 4,000 files you don't need
+# spend 10 minutes deleting everything except the 2 files you wanted
+```
+
+## 🚀 The gitfetch way
+
+```bash
+npx gitfetch
+# Paste your URL → Browse the tree → Pick your files → Done
+```
+
+<br/>
+
+---
+
+## 🎬 How It Works
+
+<br/>
+
+**① Paste your link**
+
+![Step 1](https://github.com/argho0279-ship-it/gitfetch/raw/master/public/step-1.png)
+
+Run `npx gitfetch` and paste any GitHub URL straight from your browser. No shorthand, no docs, no thinking.
+
+<br/>
+
+**② Browse & select**
+
+![Step 2](https://github.com/argho0279-ship-it/gitfetch/raw/master/public/step-2.png)
+
+Navigate the full file tree right in your terminal. Open folders, explore the structure, and hit `Space` to select exactly what you want.
+
+<br/>
+
+**③ Download only what you need**
+
+![Step 3](https://github.com/argho0279-ship-it/gitfetch/raw/master/public/step-3.png)
+
+Clone the whole repo or grab just the selected files. Zero bloat, clean output.
+
+<br/>
 
 ---
 
 ## ✨ Features
 
-- **Beautiful TUI** - Stunning ASCII art logo with a modern, centered interface
-- **Interactive File Browser** - Navigate repository file trees with arrow keys
-- **File Selection** - Select specific files or entire folders with Space
-- **Two Download Options**:
-  - Clone entire repository with git
-  - Download only selected files
+| | |
+|---|---|
+| 🔗 **Paste any URL** | Full GitHub links work. No `user/repo` syntax to memorize. |
+| 📁 **File picker** | Select specific files and folders — not just the whole repo. |
+| ⚡ **Zero install** | `npx gitfetch` and you're running. No global install needed. |
+| 🎨 **Beautiful TUI** | A terminal UI that's actually nice to look at. |
+| 🔑 **Token support** | Optional GitHub token to avoid rate limits. |
+| 🧠 **Smart parsing** | Handles full URLs, shorthand, branches — all of it. |
+
+<br/>
+
+---
+
+## 🚀 Getting Started
+
+**Recommended — zero install**
+```bash
+npx gitfetch
+```
+
+**Or install globally**
+```bash
+npm install -g gitfetch-cli
+gitfetch
+```
+
+<br/>
+
+---
+
+## ⌨️ Keyboard Shortcuts
+
+| Key | Action |
+|-----|--------|
+| `↑ / ↓` | Navigate files |
+| `Space` | Select / deselect |
+| `Enter` | Open folder |
+| `Esc` | Go back |
+| `Ctrl + A` | Clone entire repo |
+| `Ctrl + D` | Download selected files |
+| `Ctrl + C` | Exit |
+
+<br/>
+
+---
+
+## 🔑 GitHub Token *(Optional)*
+
+By default you get **60 API requests/hour**. To increase that to 5,000/hour:
+
+```bash
+# macOS / Linux
+export GITHUB_TOKEN=ghp_your_token_here
+
+# Windows
+set GITHUB_TOKEN=ghp_your_token_here
+```
+
+→ [Generate a token](https://github.com/settings/tokens) — no special scopes needed for public repos.
+
+<br/>
+
+---
+
+## 🛠️ Requirements
+
+- Node.js 18+
+- Git installed
+
+<br/>
+
+---
+
+## 🗺️ Roadmap
+
+- [x] GitHub
+- [ ] GitLab
+- [ ] Bitbucket
+- [ ] Azure DevOps
+- [ ] Auto install dependencies after download
+- [ ] Open in VS Code after cloning
+
+<br/>
+
+---
+
+## 🤝 Contributing
+
+```bash
+git clone https://github.com/argho0279-ship-it/gitfetch.git
+cd gitfetch
+npm install
+npm run build
+npm start
+```
+
+PRs and issues are welcome!
+
+<br/>
+
+---
+
+<div align="center">
+
+**Built for developers who move fast.**
+
+[npm](https://www.npmjs.com/package/gitfetch-cli) · [Issues](https://github.com/argho0279-ship-it/gitfetch/issues) · [Pull Requests](https://github.com/argho0279-ship-it/gitfetch/pulls)
+
+<br/>
+
+*If gitfetch saved you even 30 seconds — a ⭐ means the world to an indie dev.*
+
+</div>
 - **Keyboard Navigation**:
   - `↑/↓` - Navigate files
   - `Space` - Select/deselect files
